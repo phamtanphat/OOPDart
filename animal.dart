@@ -12,7 +12,7 @@ class Animal {
   }
 
   String toString() {
-    return "Animal {category : $category , weight : $weight , height : $_height}";
+    return "Animal {category : $category , weight : $weight }";
   }
 
   // constructor : Phương thức khởi tạo
@@ -20,5 +20,11 @@ class Animal {
     this.category = category;
     this.weight = weight;
     this.height = height;
+  }
+
+  //Named constructor
+  Animal.constructor2(String category, int weight) {
+    this.category = category;
+    this.weight = weight;
   }
 }
