@@ -2,11 +2,12 @@ import 'animal.dart';
 
 void main(){
 
-  var cat = Animal();
-  cat.category = 'Cat';
-  cat.weight = 2;
+  // báo lỗi trong quá trình runtime
 
-  cat.height = 0.5;
+  // ctrl + P
+  var cat = Animal("Cat",2,0.5);
 
-  print(cat.height);
+  print(cat);
+
+
 }

@@ -1,7 +1,7 @@
-class Animal{
-  String category;
-  int weight;
-  num _height;
+class Animal {
+  late String category;
+  late int weight;
+  late num _height;
 
   // alt + insert
 
@@ -11,15 +11,14 @@ class Animal{
     _height = value;
   }
 
-// getter setter
+  String toString() {
+    return "Animal {category : $category , weight : $weight , height : $_height}";
+  }
 
-  // num get height => _height;
-  //
-  // void set height(num height){
-  //   _height = height;
-  // }
-
-
-
-
+  // constructor : Phương thức khởi tạo
+  Animal(String category, int weight, num height) {
+    this.category = category;
+    this.weight = weight;
+    this.height = height;
+  }
 }
