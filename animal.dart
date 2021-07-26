@@ -16,11 +16,7 @@ class Animal {
   }
 
   // constructor : Phương thức khởi tạo
-  Animal(String category, int weight, num height) {
-    this.category = category;
-    this.weight = weight;
-    this.height = height;
-  }
+  Animal(this.category, this.weight,this._height);
 
   //Named constructor
   Animal.constructor2(String category, int weight) {
