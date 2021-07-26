@@ -12,15 +12,9 @@ class Animal {
   }
 
   String toString() {
-    return "Animal {category : $category , weight : $weight }";
+    return "Animal {category : $category , weight : $weight , height : $_height }";
   }
 
   // constructor : Phương thức khởi tạo
-  Animal(this.category, this.weight,this._height);
-
-  //Named constructor
-  Animal.constructor2(String category, int weight) {
-    this.category = category;
-    this.weight = weight;
-  }
+  Animal(this.category, this.weight, this._height);
 }

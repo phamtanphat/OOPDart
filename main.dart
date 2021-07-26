@@ -1,19 +1,10 @@
 import 'animal.dart';
+import 'cat.dart';
 
 void main() {
-  // báo lỗi trong quá trình runtime
+  // solid trong hướng đối tượng
 
-  // ctrl + P
-  var cat = Animal("Cat", 1 ,0.5);
-  print(cat);
-  // showCountry(country2: "Mỹ" );
+  var cat = Cat.typeColor("Meomeo", 1, 0.5, "grey");
+
+
 }
-
-// void showCountry({String? country, String? country2}) {
-//   if (country != null) {
-//     print(country);
-//   }
-//   if (country2 != null) {
-//     print(country2);
-//   }
-// }
